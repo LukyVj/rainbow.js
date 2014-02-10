@@ -1,79 +1,293 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Rainbow.js : A jQuery library to manage gadients easily ! " />
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Your Website</title>
+</head>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<body>
 
-    <title>Rainbow.js</title>
-  </head>
+ <link href='http://fonts.googleapis.com/css?family=Allerta' rel='stylesheet' type='text/css'> 
 
-  <body>
+<link rel="stylesheet" href="http://cdn.web-gate.fr/prism/prism.css" />
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/LukyVj/Rainbow.js">View on GitHub</a>
 
-          <h1 id="project_title">Rainbow.js</h1>
-          <h2 id="project_tagline">A jQuery library to manage gadients easily ! </h2>
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.1/grids-min.css">
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/LukyVj/Rainbow.js/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/LukyVj/Rainbow.js/tarball/master">Download this project as a tar.gz file</a>
+<div class="pure-g-r">
+  <div class="pure-u-1-1 rainbow" id="gradient_1" data-type="linear" data-degrees="45" data-color="f1c40f-e74c3c" data-opacity=".75" role="header">
+    <div class="content">
+      <h1>Rainbow.js</h1>
+      <h2>A small jQuery gradient helper.</h2>
+    </div>
+  </div>
+
+  <div class="pure-u-1-1">
+    <div class="content">    
+      <h2>Say hello to rainbow.js</h2>
+      <p>Rainbow.js is a small jQuery library that will allow you to create css gradients, with HTML only</p>
+    </div>
+
+  </div>
+  <div class="pure-u-1-1">
+    <div class="content">    
+      <h2>Get Started</h2>
+      <p>Its easy, you have to download the rainbow.js main script, once its done, you just have to link it to your documents, after the jQuery inclusion.</p>
+      <pre class="language-markup">
+           <code class="language-markup">
+             &lt;script type="text/javascript" src="path/to/rainbow.js">&lt;/script&gt;
+           </code>
+         </pre>
+    </div>
+    <div class="pure-u-1-1">
+      <div class="content">    
+        <h2>And now what ?</h2>
+        <p>Now, you just have to create your first gradient with rainbow.js !</p>
+        <p>
+          Let's start with a simple structure. We will create regular shapes, a square and a circle. 
+        </p>
+        <h4>First, the css</h4>
+        <div class="pure-u-1-1">
+
+          <div class="pure-u-1-3">
+            <pre class="language-css">
+           <code class="language-css">
+.square{
+  width:4em;
+  height:4em;
+  margin:.5em;
+}</code>
+         </pre>
+          </div>
+
+          <div class="pure-u-1-3">
+            <pre class="language-css">
+           <code class="language-css">
+.rounded{
+  width:4em;
+  height:4em;
+  margin:.5em;
+}
+.rounded:before{
+   border-radius:100%;
+}</code>
+         </pre>
+          </div>
+        </div>
+        <h4>And now, the HTML</h4>
+        <div class="pure-u-1-1">
+          <div class="pure-u-1-3">
+            <pre class="language-markup">
+           <code class="language-markup">
+&lt;div 
+class="square rainbow" 
+id="gradient_2" 
+data-type="linear" 
+data-degrees="45" 
+data-color="f1c40f-d35400"
+data-opacity="1"
+>&lt;/div&gt;</code>
+         </pre>
+          </div>
+          <div class="pure-u-1-3">
+            <pre class="language-markup">
+           <code class="language-markup">
+&lt;div 
+class="rounded rainbow" 
+id="gradient_3" 
+data-type="radial" 
+data-degrees="45" 
+data-color="ea6153-c0392b"
+data-opacity="1"
+>&lt;/div&gt;</code>
+         </pre>
+          </div>
+        </div>
+        <h4> will produce : </h4>
+        <div class="pure-u-1-1">
+          <div class="pure-u-1-3">
+            <section>
+              <figure>
+                <div class="square rainbow" id="gradient_2" data-type="linear" data-degrees="45" data-color="f1c40f-d35400" data-opacity="1" ></div>
+              </figure>
             </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+          </div>
+          <div class="pure-u-1-3">
+            <section>
+              <figure>
+                <div class="rounded rainbow" id="gradient_2" data-type="radial" data-degrees="45" data-color="ea6153-c0392b" data-opacity="1" ></div>
+              </figure> 
+            </section> 
+          </div> 
+        </div>
+      </div>
+      <div class="pure-u-1-1">
+        <div class="content">  
+          <h2>Gradient images ? Let's do it</h2>
+          <p>You probably noticed the header image, its a simple <code class="language-markup">div</code> with a <code class="language-markup">background:url('image.png');</code> and Rainbow.js finish the job ! </p>
+          
+          <section>
+            <div class="pure-u-1-3">
+              <pre class="language-markup">
+                         <code class="language-markup">
+&lt;div class="image rainbow" 
+id="gradient_80" 
+data-type="linear" 
+data-degrees="45" 
+data-color="000-F00"
+&gt;&lt;/div&gt;</code></pre>
+            </div>
+            <div class="pure-u-1-3">
+              <pre class="language-markup">
+                         <code class="language-markup">
+.image{
+  width:15em;
+  height:8em;
+  display:block;
+  margin:auto;
+  background:url(image.png)no-repeat center center;
+  background-size:cover;
+}
 </code></pre>
+            </div>
+            <div class="pure-u-1-1">
+              <div class="result">
+            <h4>Will produce : </h4>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+            <section>
+              <div class="image rainbow" id="gradient_80" data-type="linear" data-degrees="45" data-opacity=".75" data-color="3498db-f1c40f"></div>
+            </section>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+          </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="pure-u-1-1">
+        <div class="content">    
+          <h2>Gradient Text <small>(webkit only)</small></h2>
+          <p>You can find other applications with Rainbow.js, like create a title with a gradient color, Its easy, you just have to wrap your text with a <code class="markup--css">.rainbow</code> class, and set the attributes to fit to your wish.</p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+          <pre class="language-markup">
+                         <code class="language-markup">
+&lt;h1 class="rainbow" 
+id="rainText_1" 
+data-type="linear" 
+data-degrees="0" 
+data-color="000-F00"
+&gt;Look ma ! A Rainbow text !&lt;/h1&gt;</code>
+            </pre>
+          <div class="result">
+            <h4>Will produce : </h4>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+            <section>
+              <h1 class="rainbow" id="rainText_1" data-type="linear" data-degrees="0" data-color="000-F00">Look ma ! A Rainbow text ! </h1>
+            </section>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+          </div>
+          <h4>More gradient texts ? </h4>     
+        </div>
+        <pre class="language-markup"> 
+  <code class="language-markup">
+&lt;h2 class="rainbow" id="rainText_2" data-type="linear" data-degrees="0" data-color="3498db-8e44ad"&gt;Gradient on text, webkit only :/  &lt;/h2&gt;
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+&lt;h3 class="rainbow" id="rainText_3" data-type="linear" data-degrees="0" data-color="2c3e50-95a5a6">But still a good feature for rainbow.js &lt;/h3&gt;
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+&lt;p class="rainbow" id="rainText_4" data-type="radial" data-degrees="0" data-color="c0392b-1abc9c"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe eveniet a ullam laborum sint libero aspernatur iste beatae odit odio necessitatibus quod neque debitis hic voluptatum. Repudiandae modi nihil exercitationem.&lt;/p&gt;
+  </code>
+</pre>
+        <div class="result">
+          <h4>Will produce : </h4>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+          <section>
+            <h2 class="rainbow" id="rainText_2" data-type="linear" data-degrees="0" data-color="3498db-8e44ad">Gradient on text, webkit only :/  </h2>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+            <h3 class="rainbow" id="rainText_3" data-type="linear" data-degrees="0" data-color="2c3e50-95a5a6">But still a good feature for rainbow.js </h3>
+
+            <p class="rainbow" id="rainText_4" data-type="radial" data-degrees="0" data-color="c0392b-1abc9c">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe eveniet a ullam laborum sint libero aspernatur iste beatae odit odio necessitatibus quod neque debitis hic voluptatum. Repudiandae modi nihil exercitationem.</p>
+          </section>
+
+        </div>
+      </div>
+      <div class="pure-u-1-1">
+        <div class="content">   
+          <h2>Attributes</h2>
+          <ul>
+            <li><a href="#">Class</a></li>
+            <li><a href="#">ID</a></li>
+            <li><a href="#">data-type</a></li>
+            <li><a href="#">data-degrees</a></li>
+            <li><a href="#">data-color</a></li>
+            <li><a href="#">data-opacity</a></li>
+          </ul> 
+          
+          <section id="class">
+            <h3>Attriute : class</h3>
+            <p>On the class attribute, you just have to set the <code  class="language-markup">.rainbow </code> class to your element, and let the magic happen !</p>
+          </section>
+           <section id="id">
+            <h3>Attriute : ID</h3>
+             <p>The ID attribute, is maybe the more complex thing to understand with Rainbow.js</p>
+             
+             <p>If you want a gradient block, you have to identify it like this <code class="language-markup">&lt;div id="gradient_1"&gt;&lt;/div&gt;</code>.</p>
+             <p>But what if you want to use more than 1 gradient block ? Don't panic ! Here is the solution :  </p>
+             <pre class="language-markup"><code  class="language-markup">
+&lt;div class="rainbow" id="gradient_1" data-type="linear" data-degrees="45" data-color="ea6153-c0392b" data-opacity="1">&lt;/div&gt;
+&lt;div class="rainbow" id="gradient_2" data-type="linear" data-degrees="45" data-color="ea6153-c0392b" data-opacity="1">&lt;/div&gt;
+&lt;div class="rainbow" id="gradient_3" data-type="linear" data-degrees="45" data-color="ea6153-c0392b" data-opacity="1">&lt;/div&gt;
+&lt;div class="rainbow" id="gradient_4" data-type="linear" data-degrees="45" data-color="ea6153-c0392b" data-opacity="1">&lt;/div&gt;
+&lt;div class="rainbow" id="gradient_5" data-type="linear" data-degrees="45" data-color="ea6153-c0392b" data-opacity="1">&lt;/div&gt;
+             </code></pre>
+          </section>
+           <section id="type">
+            <h3>Attriute : data-type</h3>
+             <p>The <code class="language-markup">data-type</code> attribute can have <strong>2</strong> differents values</p>
+             <ul>
+               <li>radial <span class="sample rainbow" id="gradient_4" data-type="radial" data-degrees="0" data-color="ea6153-c0392b" data-opacity="1"></span></li>
+               <li>linear <span class="sample rainbow" id="gradient_5" data-type="linear" data-degrees="0" data-color="ea6153-c0392b" data-opacity="1"></span></li>
+
+             </ul> 
+             
+          </section>
+           <section id="degrees">
+            <h3>Attriute : data-degrees</h3>
+             <p>The <code class="language-markup">data-degrees</code> attribute will only work with the linear attribute, it will indicate to rainbow.js by how many degrees you want to rotate your gradient. </p>
+             <ul>
+               <li><code class="language-markup">data-degrees="0"</code> <span class="sample rainbow" id="gradient_6" data-type="linear" data-degrees="0" data-color="ffffff-000000" data-opacity="1"></span></li>
+               <li><code class="language-markup">data-degrees="45"</code> <span class="sample rainbow" id="gradient_7" data-type="linear" data-degrees="45" data-color="ffffff-000000" data-opacity="1"></span></li>
+               <li><code class="language-markup">data-degrees="95"</code> <span class="sample rainbow" id="gradient_8" data-type="linear" data-degrees="95" data-color="ffffff-000000" data-opacity="1"></span></li>
+
+             </ul> 
+             
+          </section>
+          <section id="color">
+            <h3>Attriute : data-color</h3>
+            <p>With the <code class="language-markup">data-color</code> attribute, you will specify which colors you want to use for your gradients. </p>
+<ul>
+               <li><code class="language-markup">data-color="FFFFFF-000000"</code> <span class="sample rainbow" id="gradient_9" data-type="linear" data-degrees="0"  data-color="FFFFFF-000000" data-opacity="1"></span></li>
+               <li><code class="language-markup">data-color="2ECC71-F1C40F"</code> <span class="sample rainbow" id="gradient_10" data-type="linear" data-degrees="0" data-color="2ECC71-F1C40F" data-opacity="1"></span></li>
+               <li><code class="language-markup">data-colors="EA6153-9B59B6"</code> <span class="sample rainbow" id="gradient_11" data-type="linear" data-degrees="0" data-color="EA6153-9B59B6" data-opacity="1"></span></li>
+
+             </ul> 
+          </section>
+          <section id="opacity">
+            <h3>Attriute : data-opacity</h3>
+            <p>The <code class="language-markup">data-opacity</code> attribute, will determine the opacity ammount of your gradient, it goes from <strong>0</strong> to <strong>1</strong> and accept values like <strong>.50</strong>. </p>
+<ul>
+  <li><code class="language-markup">data-opacity=".25"</code> <span class="sample rainbow" id="gradient_12" data-type="linear" data-degrees="0"  data-color="FFFFFF-000000" data-opacity=".25"></span></li>
+               <li><code class="language-markup">data-opacity=".50"</code> <span class="sample rainbow" id="gradient_13" data-type="linear" data-degrees="0"  data-color="FFFFFF-000000" data-opacity=".50"></span></li>
+               <li><code class="language-markup">data-color=".85"</code> <span class="sample rainbow" id="gradient_14" data-type="linear" data-degrees="0" data-color="FFFFFF-000000" data-opacity=".85"></span></li>
+               <li><code class="language-markup">data-colors="1"</code> <span class="sample rainbow" id="gradient_15" data-type="linear" data-degrees="0" data-color="FFFFFF-000000" data-opacity="1"></span></li>
+
+             </ul> 
+          </section>
+        </div>
+      </div> 
     </div>
+    <link rel="stylesheet" href="http://cdn.web-gate.fr/prism/prism.js" /> 
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Rainbow.js maintained by <a href="https://github.com/LukyVj">LukyVj</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+</body>
 
-    
-
-  </body>
 </html>
