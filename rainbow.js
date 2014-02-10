@@ -13,7 +13,7 @@ $(document).ready(function () {
                     deg = $(this).data('degrees'),
                     gradient = $('[data-type*="' + type + '"]#' + $(this).attr('id') + '').data('color'),
                     colors = gradient.split('-'),
-                    head = $('[class*="section_"].rainbow[data-type="' + type + '"]:before');
+                    head = $('.rainbow[data-type="' + type + '"]:before');
 
               if($(this).data('type') == 'linear'){
                 var deg =  deg + 'deg,'
