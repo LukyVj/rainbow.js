@@ -13,7 +13,7 @@ $(document).ready(function () {
                     deg = $(this).data('degrees'),
                     gradient = $('[data-type*="' + type + '"]#' + $(this).attr('id') + '').data('color'),
                     colors = gradient.split('-'),
-                    head = $('[class*="section_"].rainbow[data-type="' + type + '"]:before');
+                    head = $('.rainbow[data-type="' + type + '"]:before');
 
               if($(this).data('type') == 'linear'){
                 var deg =  deg + 'deg,'
@@ -22,7 +22,7 @@ $(document).ready(function () {
               var deg = ''
               }
                
-                body.prepend('<style> [class*="section_"].rainbow#' + $(this).attr('id') + ':before { position: absolute; content: ""; display: block; width: 100%; height: ' + height + 'px; opacity: .75; z-index: 1; } [class*="section_"].rainbow[data-type="' + type + '"]#' + $(this).attr('id') + ':before{background:' + type + '-gradient('+deg+'#' + colors[0] + ',#' + colors[1] + ')}</style>'); 
+                body.prepend('<style>.rainbow#' + $(this).attr('id') + ':before { position: absolute; content: ""; display: block; width: 100%; height: ' + height + 'px; opacity: .75; z-index: 1; } .rainbow[data-type="' + type + '"]#' + $(this).attr('id') + ':before{background:' + type + '-gradient('+deg+'#' + colors[0] + ',#' + colors[1] + ')}</style>'); 
             }); 
 
 
