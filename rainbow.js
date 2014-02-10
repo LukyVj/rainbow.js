@@ -22,7 +22,7 @@ $(document).ready(function () {
               var deg = ''
               }
                
-                body.prepend('<style> [class*="section_"].rainbow#' + $(this).attr('id') + ':before { position: absolute; content: ""; display: block; width: 100%; height: ' + height + 'px; opacity: .75; z-index: 1; } [class*="section_"].rainbow[data-type="' + type + '"]#' + $(this).attr('id') + ':before{background:' + type + '-gradient('+deg+'#' + colors[0] + ',#' + colors[1] + ')}</style>'); 
+                body.prepend('<style>.rainbow#' + $(this).attr('id') + ':before { position: absolute; content: ""; display: block; width: 100%; height: ' + height + 'px; opacity: .75; z-index: 1; } .rainbow[data-type="' + type + '"]#' + $(this).attr('id') + ':before{background:' + type + '-gradient('+deg+'#' + colors[0] + ',#' + colors[1] + ')}</style>'); 
             }); 
 
 
