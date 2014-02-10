@@ -5,7 +5,7 @@ $(document).ready(function () {
     function rainbowHeader() {
 
         var height = $('.rainbow').height(),
-            $this = $('body').find('.rainbow:not(#rainText)').each(function () {
+            $this = $('body').find('.rainbow').not('[id*="rainText"]').each(function () {
 
                 var body = $('body'),
                     height = $(this).height(),
