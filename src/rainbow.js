@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 
   //Rainbow Header
-  function rainbow{
+  function rainbow(){
 
     var height = $('.rainbow').height(),
         $this = $('body').find('.rainbow').not('[id*="rainText"]').each(function () {
