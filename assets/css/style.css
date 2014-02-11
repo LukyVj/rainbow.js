@@ -84,3 +84,23 @@ section figure .square {
   height: 2em;
   display: inline-block;
 }
+
+.content, .pure-u-1-1:not(:first-child) {
+  max-width: 840px;
+  margin: auto;
+  display: block;
+  margin-top: 1em;
+}
+.content p, .pure-u-1-1:not(:first-child) p {
+  text-align: left;
+}
+.content ul, .pure-u-1-1:not(:first-child) ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.content ul li, .pure-u-1-1:not(:first-child) ul li {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
