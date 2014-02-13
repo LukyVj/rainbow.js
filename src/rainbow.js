@@ -33,16 +33,12 @@ $(document).ready(function () {
          
           $( window ).resize(function() {
 
-            var dyn = $('#dynamicStyle');
-            //console.log(dyn);
-            var dynVal = dyn.text();
-            console.log(dynVal)
-            var newWidth = $(this).width();
-            console.log(newWidth)
-            console.log(width);
-            console.log(typeof(dynVal));
-            var dynVal = dynVal.replace(width,newWidth);
-            console.log(dynVal);
+            var dyn = document.querySelector('#dynamicStyle'),
+                dynTxt = dyn.innerText,
+                newWidth = window.width,
+                newdynTxt = dynTxt.replace(width, newWidth);
+
+            dyn.innerText = newdynTxt;
 
           });
       });
