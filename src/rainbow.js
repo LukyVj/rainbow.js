@@ -46,10 +46,10 @@ $(document).ready(function () {
   } 
 
    //Rainbow Header
-  function rainbowBlock(){
-
+  function rainbowBlock(){ 
+ 
     var height = $('.rainbow').height(),
-        $this = $('body').find('.rainbow').not('[id*="rainText"],[id*="header_"]').each(function () {
+        $this = $('body').find('.rainbow').not('[id*="rainText"],[id*="Header_"]').each(function () {
 
           var body = $('body'),
               height = $(this).height(),
@@ -109,3 +109,4 @@ $(document).ready(function () {
   rainbowHeader();
 
 });
+
