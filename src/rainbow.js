@@ -1,11 +1,59 @@
+// Rainbow.js 0.0.1
+// 2014 @LukyVj
+// http://lucasbonomi.com
+
 $(document).ready(function () {
 
 
   //Rainbow Header
-  function rainbow(){
+  function rainbowHeader(){
 
     var height = $('.rainbow').height(),
-        $this = $('body').find('.rainbow').not('[id*="rainText"]').each(function () {
+        $this = $('body').find('.rainbow').not('[id*="gradient_"],[id*="rainText"]').each(function () {
+ 
+          var body = $('body'),
+              height = $(this).height(),
+              width = $(this).width(),
+              opacity = $(this).data('opacity'),
+              type = $(this).data('type'),
+              deg = $(this).data('degrees'),
+              gradient = $('[data-type*="' + type + '"]#' + $(this).attr('id') + '').data('color'),
+              colors = gradient.split('-'),
+              head = $('.rainbow[data-type="' + type + '"]:before');
+
+          if ($(this).data('type') == 'linear') {
+            var deg = deg + 'deg,'
+            } else {
+              var deg = '' 
+              } 
+       
+         
+            body.prepend('<style id="dynamicStyle">.rainbow#' + $(this).attr('id') + ':before { position: absolute; content: ""; display: block;margin:0; width: 100%; height:100%;max-width:' + width + 'px;max-height:' + height + 'px;min-width:' + width + 'px;min-height:' + height + 'px; ' + height + 'px; opacity:' + opacity + '; z-index: 1; } .rainbow[data-type="' + type + '"]#' + $(this).attr('id') + ':before{background:' + type + '-gradient(' + deg + '#' + colors[0] + ',#' + colors[1] + ')}</style>');
+          
+         
+          $( window ).resize(function() {
+
+            var dyn = $('#dynamicStyle');
+            //console.log(dyn);
+            var dynVal = dyn.text();
+            console.log(dynVal)
+            var newWidth = $(this).width();
+            console.log(newWidth)
+            console.log(width);
+            console.log(typeof(dynVal));
+            var dynVal = dynVal.replace(width,newWidth);
+            console.log(dynVal);
+
+          });
+      });
+ 
+  } 
+
+   //Rainbow Header
+  function rainbowBlock(){
+
+    var height = $('.rainbow').height(),
+        $this = $('body').find('.rainbow').not('[id*="rainText"],[id*="header_"]').each(function () {
 
           var body = $('body'),
               height = $(this).height(),
@@ -23,14 +71,15 @@ $(document).ready(function () {
               var deg = '' 
               }
        
-          body.prepend('<style>.rainbow#' + $(this).attr('id') + ':before { position: absolute; content: ""; display: block;margin:0; width: 100%; height:100%;max-width:' + width + 'px;max-height:' + height + 'px;min-width:' + width + 'px;min-height:' + height + 'px; ' + height + 'px; opacity:' + opacity + '; z-index: 1; } .rainbow[data-type="' + type + '"]#' + $(this).attr('id') + ':before{background:' + type + '-gradient(' + deg + '#' + colors[0] + ',#' + colors[1] + ')}</style>');
+         
+            body.prepend('<style id="dynamicStyle">.rainbow#' + $(this).attr('id') + ':before { position: absolute; content: ""; display: block;margin:0; width: 100%; height:100%;max-width:' + width + 'px;max-height:' + height + 'px;min-width:' + width + 'px;min-height:' + height + 'px; ' + height + 'px; opacity:' + opacity + '; z-index: 1; } .rainbow[data-type="' + type + '"]#' + $(this).attr('id') + ':before{background:' + type + '-gradient(' + deg + '#' + colors[0] + ',#' + colors[1] + ')}</style>');
+          
           
   
+
         });
 
-
   } 
-
   function rainbowText() {
 
     $this = $('body').find('h1.rainbow,h2.rainbow,h3.rainbow,h4.rainbow,h5.rainbow,h6.rainbow,a.rainbow,p.rainbow').each(function () {
@@ -60,6 +109,7 @@ $(document).ready(function () {
 
 
   rainbowText();
-  rainbow();
+  rainbowBlock();
+  rainbowHeader();
 
 });
