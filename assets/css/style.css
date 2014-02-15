@@ -1,3 +1,5 @@
+
+
 * {
   -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
@@ -21,7 +23,7 @@ body {
 body p {
   font-weight: 500;
 }
-
+a{text-decoration: none;}
 .content {
   position: relative;
   z-index: 99;
@@ -92,8 +94,12 @@ width: 49.3333%;
   display: block;
   margin-top:0;
   background: rgba(255,255,255,.15);
-  padding:1em 2em;
+  padding: 2em 2em;
+  margin-top: 1em;
+  float: left;
+  width: 100%;
 }
+.pure-u-1-1 > div {margin-top: 0;float: left;}
 .header{background:transparent;}
 
 .content p, .pure-u-1-1:not(:first-child) p {
@@ -103,6 +109,9 @@ width: 49.3333%;
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: 1em;
+  float: left;
+  width: 10em;
 }
 .tab ul li, .pure-u-1-1:not(:first-child) .tab ul li {
   display: block;
@@ -110,21 +119,32 @@ width: 49.3333%;
   text-align: left;
   float: left;
 }
-.content:last-of-type{height: inherit;}
+.content:last-of-type{height: inherit;height: auto;/* min-height: 50em; */}
 p,h1,h2,h3,h4,a{font-family: "Allerta"}
 .attributes{
   height: 30em
 }
 .tab{
-  width: 100%;
+  width: 70%;
   display: block;
   float: left;
+  height: 25em;
+  margin-left: 5em;
 }
 .content .tabLinks{
-  width:100% !important;
+  width: 10em;
   display:block; 
   clear:both;
-  height:2em;}
+  float: left;
+  height:2em;
+  margin-top: -4em;
+}
+.content .tabLinks li a{
+  color: #000;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 .content .tabLinks li{
   float:left;
   width: auto;
@@ -133,7 +153,39 @@ p,h1,h2,h3,h4,a{font-family: "Allerta"}
   padding:1em;
   background:rgba(255,255,255,.3);
   
-} 
-.content .tabLinks li.active{
-  border-bottom:.2em solid #fff;
+  text-transform: uppercase;   display: block;   letter-spacing: 1px;   
+  margin: 0em auto;   background-color: #fff;   border: 1px solid #000;   outline: none;   
+  width: 100%;   
+  height: 3em;
+  padding: .5em 0;   box-shadow: 3px 3px 0px #000;   transition: all .4s ease-in-out; 
+  font-size: .8em;
+  clear: both;
 }
+.content.ctabs{
+    height: auto;
+    float: left;
+    width: 100%;
+}
+.content .tabLinks li:hover {   background-color: #feae1b;   color: white;   cursor: pointer;   transition: all .4s ease-in-out;   box-shadow: 0 0 0; }
+.content .tabLinks li:hover a{color:#fff;}
+.content .tabLinks li.active{
+  background-color: #feae1b;   color: white;   cursor: pointer;   transition: all .4s ease-in-out;   box-shadow: 0 0 0;
+}
+.content .tabLinks li.active a{color:#fff;}
+.title_attr{
+    text-align: left;
+    padding-left: 10em;
+}
+.tab h3{
+    text-align: left;
+}
+.content .tab ul{
+    width: 100%;
+    height: 15em;
+    margin-top: 1em;
+}
+
+pre{ background: radial-gradient(at 50% 0, rgba(0,0,0,.2),transparent 70%), radial-gradient(at 50% 100%, rgba(0,0,0,.2),transparent 70%) bottom;
+  background-repeat: no-repeat;
+  background-size:100% 15px;
+  background-attachment:local;}

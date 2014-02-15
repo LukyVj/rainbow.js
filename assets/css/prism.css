@@ -7,7 +7,7 @@
 code[class*="language-"],
 pre[class*="language-"] {
 	color: black;
-	text-shadow: 0 1px white;
+	text-shadow: 0 -1px rgba(255,255,255,1);
 	font-family: Consolas, Monaco, 'Andale Mono', monospace;
 	direction: ltr;
 	text-align: left;
@@ -24,6 +24,7 @@ pre[class*="language-"] {
 	-moz-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
+	padding: 0;
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
@@ -50,16 +51,22 @@ pre[class*="language-"] {
 	padding: 1em;
 	margin: .5em 0;
 	overflow: auto;
+	min-height: 4em;
+	max-height: 10em;
+	padding: 4px;   background-color: #fff;   border: 1px solid #ccc;   border: 1px solid rgba(0, 0, 0, 0.2);   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: #f5f2f0;
+	background: #ecf0f1;   background-repeat: no-repeat;   background-size:100% 15px;   background-attachment:local;   background-repeat: no-repeat;   
+	background-size: 100% 15px;   background-attachment:local;
+	padding: 1em;
+	border-radius: 9px;
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-	padding: .1em;
+	padding: .4em;
 	border-radius: .3em;
 }
 
