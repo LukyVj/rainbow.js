@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('.tab').fadeOut(0);  
-  $('a').click(function(e) {
+  $('ul li a').click(function(e) {
  e.preventDefault();
    var $this = $(this),
        href = $this.attr('href'); 
