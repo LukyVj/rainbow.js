@@ -44,6 +44,10 @@ a{text-decoration: none;}
 [class*="pure-u"] p {
   color: white;
 }
+.wrapper{
+  max-width: 1200px;
+  margin: 2em auto;
+}
 
 /*Demo*/
 .square, .rounded {
@@ -89,7 +93,7 @@ width: 49.3333%;
   display: inline-block;
 }
 .content, .pure-u-1-1:not(:first-of-type) {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: auto;
   display: block;
   margin-top:0;
@@ -99,8 +103,8 @@ width: 49.3333%;
   float: left;
   width: 100%;
 }
-.pure-u-1-1 > div {margin-top: 0;float: left;}
-.header{background:transparent;}
+.pure-u-1-1 > div {margin-top: 0;/* float: left; */}
+.header{background:transparent;width: 100%;text-align: center;}
 
 .content p, .pure-u-1-1:not(:first-child) p {
   text-align: left;
@@ -112,6 +116,7 @@ width: 49.3333%;
   margin-top: 1em;
   float: left;
   width: 10em;
+  height: 15em;
 }
 .tab ul li, .pure-u-1-1:not(:first-child) .tab ul li {
   display: block;
@@ -119,10 +124,11 @@ width: 49.3333%;
   text-align: left;
   float: left;
 }
-.content:last-of-type{height: inherit;height: auto;/* min-height: 50em; */}
+.content:last-of-type{height: inherit;height: auto;width: 100%;/* min-height: 50em; */}
 p,h1,h2,h3,h4,a{font-family: "Allerta"}
 .attributes{
-  height: 30em
+  max-height: 37em;
+  height: auto;
 }
 .tab{
   width: 70%;
@@ -189,3 +195,4 @@ pre{ background: radial-gradient(at 50% 0, rgba(0,0,0,.2),transparent 70%), radi
   background-repeat: no-repeat;
   background-size:100% 15px;
   background-attachment:local;}
+  .hello p{text-align: center;}
