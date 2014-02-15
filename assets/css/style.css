@@ -34,7 +34,7 @@ a{text-decoration: none;}
 [role="header"] {
   background: url(http://25.media.tumblr.com/d55a509993790027240311c9f611aaf8/tumblr_n0hpzpKEfE1st5lhmo1_1280.jpg) no-repeat center center;
   background-size: cover;
-  height: 12em;
+  height: 15em;
   text-align: center;
 }
 [role="header"] h1 {
@@ -104,7 +104,7 @@ width: 49.3333%;
   width: 100%;
 }
 .pure-u-1-1 > div {margin-top: 0;/* float: left; */}
-.header{background:transparent;width: 100%;text-align: center;}
+.header{background:transparent;width: 100%;text-align: center;height: 30em !important;}
 
 .content p, .pure-u-1-1:not(:first-child) p {
   text-align: left;
