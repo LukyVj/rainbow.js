@@ -25,7 +25,8 @@ $(document).ready(function () {
               var deg = '' 
               }       
           body.prepend('<style id="dynamicStyle">.rainbow#' + $(this).attr('id') + ':before { position: absolute; content: ""; display: block;margin:0; width: 100%; height:100%;max-width:' + width + 'px;max-height:' + height + 'px;min-width:' + width + 'px;min-height:' + height + 'px; ' + height + 'px; opacity:' + opacity + '; z-index: 1; } .rainbow[data-type="' + type + '"]#' + $(this).attr('id') + ':before{background:' + type + '-gradient(' + deg + '#' + colors[0] + ',#' + colors[1] + ')}</style>');   
-          $(document).resize(function() {
+         
+          $(window).resize(function() {
             var dyn = document.querySelector('#dynamicStyle'),
                 dynTxt = dyn.innerText,
                 newWidth = document.width,
@@ -33,6 +34,7 @@ $(document).ready(function () {
                 console.log('old width :' + width + '\n' + 'New width : ' + newWidth);
             dyn.innerText = newdynTxt;
          });
+
       });
   } 
 
