@@ -187,7 +187,7 @@ p, h1, h2, h3, h4, a {
   width: 80%;
   margin: auto 10%; }
 
-.content .tabLinks li, .content.dld a, .dld a {
+.content .tabLinks li, .content.dld a, .dld a, .btn {
   float: left;
   width: auto;
   display: block;
@@ -209,7 +209,7 @@ p, h1, h2, h3, h4, a {
   font-size: .8em;
   clear: both; }
 
-.content.dld a, .dld a {
+.content.dld a, .dld a, .btn {
   width: 45%;
   float: left;
   clear: inherit;
@@ -221,14 +221,14 @@ p, h1, h2, h3, h4, a {
   float: left;
   width: 100%; }
 
-.content .tabLinks li:hover, .content.dld a:hover, .dld a:hover {
+.content .tabLinks li:hover, .content.dld a:hover, .dld a:hover, .btn:hover {
   background-color: #feae1b;
   color: white;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
   box-shadow: 0 0 0; }
 
-.content .tabLinks li:hover a, .content.dld a:hover, .dld a:hover {
+.content .tabLinks li:hover a, .content.dld a:hover, .dld a:hover, .btn:hover {
   color: #fff; }
 
 .content .tabLinks li.active {
@@ -237,6 +237,14 @@ p, h1, h2, h3, h4, a {
   cursor: pointer;
   transition: all 0.4s ease-in-out;
   box-shadow: 0 0 0; }
+
+.btn {
+  margin-bottom: 1em;
+  width: 100%; }
+
+.dld.three .btn {
+  width: 30%;
+  margin: auto 1em; }
 
 .content .tabLinks li.active a {
   color: #fff; }
@@ -253,6 +261,23 @@ p, h1, h2, h3, h4, a {
   height: 15em;
   margin-top: 1em; }
 
+.content ul.versions {
+  width: 100%; }
+
+.pure-u-1-1:not(:first-child) ul.versions {
+  width: 100%; }
+
+ul.versions li {
+  border-bottom: 0.1em solid #2980b9; }
+  ul.versions li:before {
+    content: '→'; }
+
+ul.versions li, ul.versions li a {
+  text-align: left;
+  width: 100%;
+  padding: .5em;
+  color: #fff; }
+
 pre {
   background: radial-gradient(at 50% 0, rgba(0, 0, 0, 0.2), transparent 70%), radial-gradient(at 50% 100%, rgba(0, 0, 0, 0.2), transparent 70%) bottom;
   background-repeat: no-repeat;
@@ -261,6 +286,17 @@ pre {
 
 .hello p {
   text-align: center; }
+
+footer {
+  display: block;
+  clear: both;
+  width: 100%;
+  text-align: center; }
+  footer p {
+    letter-spacing: .1em;
+    color: rgba(255, 255, 255, 0.7); }
+    footer p a {
+      color: white; }
 
 /* Index */
 .result {
