@@ -1,6 +1,7 @@
-// Rainbow.js 0.0.1
+// Rainbow.js 0.0.2
 // 2014 @LukyVj
 // http://lucasbonomi.com
+// Thanks to @dervondenbergen for his help
 
 $(document).ready(function () {
 
