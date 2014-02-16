@@ -298,6 +298,12 @@ footer {
     footer p a {
       color: white; }
 
+.twitter-widget-0 {
+  width: 112px;
+  height: 20px;
+  position: relative;
+  top: .5em; }
+
 /* Index */
 .result {
   background: rgba(255, 255, 255, 0.4); }
