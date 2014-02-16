@@ -1,0 +1,246 @@
+
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #2980b9;
+  color: white;
+}
+body p {
+  font-weight: 500;
+}
+a{text-decoration: none;}
+.content {
+  position: relative;
+  z-index: 99;
+  text-align: center;
+}
+
+
+/*Layout*/
+[role="header"] {
+  background: url(http://25.media.tumblr.com/d55a509993790027240311c9f611aaf8/tumblr_n0hpzpKEfE1st5lhmo1_1280.jpg) no-repeat center center;
+  background-size: cover;
+  height: 15em;
+  text-align: center;
+}
+[role="header"] h1 {
+  line-height: 2;
+}
+
+[class*="pure-u"] p {
+  color: white;
+}
+.wrapper{
+  max-width: 1200px;
+  margin: 2em auto;
+}
+
+/*Demo*/
+.square, .rounded {
+  width: 4em;
+  height: 4em;
+}
+
+.rounded {
+  overflow: hidden;
+}
+.rounded:before {
+  border-radius: 100%;
+}
+
+section figure {
+  width: 40%;
+  margin: auto;
+}
+section figure .square {
+  margin: 1em auto;
+}
+
+.result section {
+  padding: 1em;
+  background: #fff;
+}
+.result > div{
+  float: left;
+  margin: .5em
+}
+.result [class*="block_"]{
+  background: rgba(white, .8);
+  padding: 1em .5em;
+  width: 100%;
+  div{float: left;margin: auto .5em}
+}
+
+.image, [class*="image_"] {
+  width: 15em;
+  height: 8em;
+  display: block;
+  margin: auto;
+  background: url(http://31.media.tumblr.com/7eaaac07f23f03cb51a296bd81d77569/tumblr_n0hpyugseU1st5lhmo1_1280.jpg) no-repeat center center;
+  background-size: cover;
+
+  &[class*="_one"]{
+    background: url(http://25.media.tumblr.com/ad80d557aee5736d7b01ca13846781f5/tumblr_n10n5ygMJI1st5lhmo1_1280.jpg) no-repeat center center;
+  background-size: cover;
+  }
+  &[class*="_two"]{
+    background: url(http://25.media.tumblr.com/18e25cdcdaaced3b2b8a467724720ece/tumblr_n10n1wmxiS1st5lhmo1_1280.jpg) no-repeat center center;
+  background-size: cover;
+  }
+  &[class*="_three"]{
+    background: url(http://24.media.tumblr.com/afe9f67b4ec353bce470203300f68618/tumblr_n10mzgcbTV1st5lhmo1_1280.jpg) no-repeat center center;
+  background-size: cover;
+  }
+  &[class*="_four"]{
+    background: url(http://31.media.tumblr.com/d489e7ec49f999ace2d3384022d4feb2/tumblr_mx1okjY0xV1sfie3io1_1280.jpg) no-repeat center center;
+  background-size: cover;
+  }
+}
+[class*="image_"] {width: 23%;margin-left: .8em !important}
+.pure-u-1-3, .pure-u-8-24 {
+width: 49.3333%;
+}
+
+.sample {
+  width: 2em;
+  height: 2em;
+  display: inline-block;
+}
+.content, .pure-u-1-1:not(:first-of-type) {
+  /* max-width: 1200px; */
+  margin: auto;
+  display: block;
+  margin-top:0;
+  background: rgba(255,255,255,.15);
+  padding: 2em 2em;
+  margin-top: 1em;
+  float: left;
+  width: 100%;
+}
+.pure-u-1-1 > div {margin-top: 0;/* float: left; */}
+.header{background:transparent;width: 100%;text-align: center;height: 30em;}
+
+.content p, .pure-u-1-1:not(:first-child) p {
+  text-align: left;
+}
+.content ul, .pure-u-1-1:not(:first-child) ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 1em;
+  float: left;
+  width: 10em;
+  height: 15em;
+}
+.tab ul li, .pure-u-1-1:not(:first-child) .tab ul li {
+  display: block;
+  width: 100%;
+  text-align: left;
+  float: left;
+}
+.content:last-of-type{height: inherit;height: auto;width: 100%;/* min-height: 50em; */}
+p,h1,h2,h3,h4,a{font-family: "Allerta", Helvetica, sans-serif}
+.attributes{
+  max-height: 37em;
+  height: auto;
+}
+.tab{
+  width: 70%;
+  display: block;
+  float: left;
+  height: 25em;
+  margin-left: 5em;
+}
+.content .tabLinks{
+  width: 10em;
+  display:block; 
+  clear:both;
+  float: left;
+  height:2em;
+  margin-top: -4em;
+}
+.content .tabLinks li a{
+  color: #000;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.dld a:first-of-type{
+  width: 80%;
+  margin: auto 10%;
+}
+.content .tabLinks li,.content.dld a,.dld a{
+  float:left;
+  width: auto;
+  display:block;
+  margin:.2em ;
+  padding:1em;
+  background:rgba(255,255,255,.3);
+  
+  text-transform: uppercase;   display: block;   letter-spacing: 1px;   
+  margin: 0em auto;   background-color: #fff;   border: 1px solid #000;   outline: none;   
+  width: 100%;   
+  height: 3em;
+  padding: .5em 0;   box-shadow: 3px 3px 0px #000;   transition: all .4s ease-in-out; 
+  font-size: .8em;
+  clear: both;
+}
+.content.dld a,.dld a{
+  width: 45%;
+  float: left;
+  clear: inherit;
+  margin:auto 2.25%;
+  color: #2980b9
+}
+.content.ctabs{
+    height: auto;
+    float: left;
+    width: 100%;
+}
+.content .tabLinks li:hover,.content.dld a:hover,.dld a:hover {   background-color: #feae1b;   color: white;   cursor: pointer;   transition: all .4s ease-in-out;   box-shadow: 0 0 0; }
+.content .tabLinks li:hover a,.content.dld a:hover,.dld a:hover{color:#fff;}
+.content .tabLinks li.active{
+  background-color: #feae1b;   color: white;   cursor: pointer;   transition: all .4s ease-in-out;   box-shadow: 0 0 0;
+}
+.content .tabLinks li.active a{color:#fff;}
+.title_attr{
+    text-align: left;
+    padding-left: 10em;
+}
+.tab h3{
+    text-align: left;
+}
+.content .tab ul{
+    width: 100%;
+    height: 15em;
+    margin-top: 1em;
+}
+
+pre{ background: radial-gradient(at 50% 0, rgba(0,0,0,.2),transparent 70%), radial-gradient(at 50% 100%, rgba(0,0,0,.2),transparent 70%) bottom;
+  background-repeat: no-repeat;
+  background-size:100% 15px;
+  background-attachment:local;}
+  .hello p{text-align: center;}
+
+/* Index */
+
+.result{
+  background: rgba(255,255,255,.4);
+}
+
+
