@@ -275,8 +275,8 @@ pre{ background: radial-gradient(at 50% 0, rgba(0,0,0,.2),transparent 70%), radi
 .twitter-widget-0{
 width: 112px;
 height: 20px;
-position: relative;
-top: .5em;
+position: relative !important;
+top: .5em !important;
 }
 /* Index */
 

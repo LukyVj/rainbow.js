@@ -301,8 +301,8 @@ footer {
 .twitter-widget-0 {
   width: 112px;
   height: 20px;
-  position: relative;
-  top: .5em; }
+  position: relative !important;
+  top: 0.5em !important; }
 
 /* Index */
 .result {
