@@ -279,7 +279,7 @@ ul.versions li, ul.versions li a {
   color: #fff; }
 
 pre {
-  background: radial-gradient(at 50% 0, rgba(0, 0, 0, 0.2), transparent 70%), radial-gradient(at 50% 100%, rgba(0, 0, 0, 0.2), transparent 70%) bottom;
+  background: radial, 50% 0, rgba(0, 0, 0, 0.2), transparent 70%, radial, 50% 100%, rgba(0, 0, 0, 0.2), transparent 70% bottom;
   background-repeat: no-repeat;
   background-size: 100% 15px;
   background-attachment: local; }
