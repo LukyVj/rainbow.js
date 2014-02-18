@@ -1,7 +1,7 @@
 // Rainbow.js 0.0.3
-// 2014 @LukyVj
+// 2014 @LukyVj | @dervondenbergen
 // http://lucasbonomi.com
-// Thanks to @dervondenbergen for his help
+// http://demont.is
 
 $(document).ready(function () {
 
