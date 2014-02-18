@@ -317,16 +317,22 @@ footer {
   border-radius: 4px;
   left: 0;
   right: 0; }
-  .alert a.close {
-    content: '×';
-    float: right;
-    margin: -0.5em 0em;
-    display: block;
-    color: blue;
+  .alert a {
+    text-decoration: underline;
     color: #fff; }
+    .alert a.close {
+      content: '×';
+      float: right;
+      margin: -0.5em 0em;
+      display: block;
+      text-decoration: none; }
   .alert.alert--red {
-    background: #ff5c69;
-    border-color: #ff4351;
+    background: #ff667a;
+    border-color: #ff4d64;
+    color: #fff; }
+  .alert.alert--green {
+    background: #2ecc71;
+    border-color: #29b765;
     color: #fff; }
 
 .result {
