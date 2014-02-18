@@ -129,3 +129,15 @@ HTML :
 Result : 
 ![](http://puu.sh/6ZyMM.png)
 
+
+## Bugs 
+
+Functions : 
+
+* Gradient headers
+* Gradient images
+	* If image got an elastic width, the gradient don't fit properly on resize.
+* Gradient blocks
+* Gradient Text
+	* Webkit only 
+
