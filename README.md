@@ -37,8 +37,8 @@ HTML :
 Result : 
 ![](http://puu.sh/6ZyEw.png)
 
-#Gradient texts ![](http://img.shields.io/badge/--Webkit---ONLY-red.svg): 
-
+#Gradient texts : 
+![](http://img.shields.io/badge/--Webkit---ONLY-red.svg)
 And finally, the last feature, a cool one, but unfortunately **-webkit-only**. 
 If you're not a webkit browser user, you will get a gradient background behind your texts. 
 
