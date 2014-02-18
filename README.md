@@ -23,6 +23,34 @@ And the HTML :
 
 ![](http://puu.sh/6ZyjF.png)
 
+#Gradient Headers : 
+You can add some sexy gradients to your header images. 
+For example, the header image of the rainbow.js demo website use this function, so if we look at the code, we can see : 
+
+HTML : 
+````
+<div class="rainbow" id="rainHeader_1" data-type="linear" data-degrees="45" data-color="f1c40f-e74c3c" data-opacity=".75" role="header"> 
+	<div class="content header">
+		<h1>Rainbow.js</h1>
+        <h2>A small jQuery gradient helper.</h2>
+    </div>
+</div>
+````
+The image was declared on the stylesheet : 
+
+CSS: 
+````
+//I use the role attribute. But assume it works with any kind of targetting. ID / Classes / attributes.
+[role="header"] {
+    background: url(path/to/my/image.jpg) no-repeat center center;
+    background-size: cover;
+    height: 15em;
+    text-align: center;
+}
+````
+#Result :
+![](http://puu.sh/70Znx.png)
+
 
 #Gradient images : 
 
