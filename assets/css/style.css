@@ -85,6 +85,9 @@ section figure .square {
   margin: auto;
   background: url(http://31.media.tumblr.com/7eaaac07f23f03cb51a296bd81d77569/tumblr_n0hpyugseU1st5lhmo1_1280.jpg) no-repeat center center;
   background-size: cover; }
+  .image.sample, [class*="image_"].sample {
+    width: 100%;
+    height: 10em; }
   .image[class*="_one"], [class*="image_"][class*="_one"] {
     background: url(http://25.media.tumblr.com/ad80d557aee5736d7b01ca13846781f5/tumblr_n10n5ygMJI1st5lhmo1_1280.jpg) no-repeat center center;
     background-size: cover; }
@@ -130,6 +133,12 @@ section figure .square {
   width: 100%;
   text-align: center;
   height: 30em; }
+
+.inner_content {
+  position: relative;
+  z-index: 2; }
+  .inner_content h3 {
+    line-height: 6; }
 
 .content p, .pure-u-1-1:not(:first-child) p {
   text-align: left; }
