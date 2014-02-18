@@ -1,4 +1,4 @@
-Rainbow.js ![](http://img.shields.io/badge/Version-0.0.3-brightgreen.svg)
+Rainbow.js ![](http://img.shields.io/badge/Version-0.0.3-brightgreen.svg) ![](http://img.shields.io/badge/issues-1-red.svg)
 ==========
 
 A jQuery library to manage gadients easily ! 
