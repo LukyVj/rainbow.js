@@ -305,5 +305,29 @@ footer {
   top: 0.5em !important; }
 
 /* Index */
+.alert {
+  position: fixed;
+  z-index: 9999999;
+  width: 80%;
+  max-width: 640px;
+  margin: 2em auto;
+  padding: 1em;
+  background: rgba(204, 204, 204, 0.4);
+  border: 0.1em solid rgba(204, 204, 204, 0.2);
+  border-radius: 4px;
+  left: 0;
+  right: 0; }
+  .alert a.close {
+    content: '×';
+    float: right;
+    margin: -0.5em 0em;
+    display: block;
+    color: blue;
+    color: #fff; }
+  .alert.alert--red {
+    background: #ff5c69;
+    border-color: #ff4351;
+    color: #fff; }
+
 .result {
   background: rgba(255, 255, 255, 0.4); }

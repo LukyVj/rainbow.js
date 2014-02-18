@@ -1,4 +1,4 @@
-@import 'bourbon/bourbon.scss';
+@import '../../bourbon/bourbon.scss';
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -279,7 +279,33 @@ position: relative !important;
 top: .5em !important;
 }
 /* Index */
-
+//Alertes
+$r:lighten(#FF4351,5%);
+.alert{
+  position: fixed; 
+  z-index: 9999999;
+  width:80%;
+  max-width:640px;
+  margin:2em auto;
+  padding:1em;
+  background:rgba(#ccc,.4);
+  border:.1em solid rgba(#ccc,.2);
+  border-radius:4px;
+  left:0;right: 0;
+  a.close{
+    content:'×';
+    float:right;
+    margin:-.5em 0em;
+    display:block;
+    color:blue;
+    color:#fff;
+  }
+  &.alert--red{
+  background:$r;
+  border-color:darken($r,5%);
+  color:#fff;
+  }
+ }
 .result{
   background: rgba(255,255,255,.4);
 }
