@@ -6,7 +6,7 @@ A jQuery library to manage gadients easily !
 #Get started
 Its easy, you have to download the rainbow.js main script, once its done, you just have to link it to your documents, after the jQuery inclusion.
 
-````
+````html
 <script type="text/javascript" src="path/to/jQuery.min.js"></script>
 <script type="text/javascript" src="path/to/rainbow.min.js"></script>
 ````
@@ -17,7 +17,7 @@ Let's start with a simple structure. We will create a regular shape, a square.`
 
 First, the css
 
-````
+````css
 .square{ 
 	width:4em; 
 	height:4em; 
@@ -26,7 +26,7 @@ First, the css
 ````
 
 And the HTML : 
-````
+````html
 <div 
 	class="square rainbow" 
 	id="gradient_2" 
@@ -46,7 +46,7 @@ You can add some sexy gradients to your header images.
 For example, the header image of the rainbow.js demo website use this function, so if we look at the code, we can see : 
 
 HTML : 
-````
+````html
 <div 
 	class="rainbow" 
 	id="rainHeader_1" 
@@ -65,7 +65,7 @@ HTML :
 The image was declared on the stylesheet : 
 
 CSS: 
-````
+````css
 //I use the role attribute. But assume it works with any kind of targetting. ID / Classes / attributes.
 [role="header"] {
     background: url(path/to/my/image.jpg) no-repeat center center;
@@ -85,7 +85,7 @@ This is one of the coolest Rainbow.js feature ! Its still in developement becaus
 By the way, you can still use it and play with it, but we didn't recommend to use it for production websites. 
 
 CSS :
-````
+````css
 .image{ 
 	width:15em; 
 	height:8em; 
@@ -96,7 +96,7 @@ CSS :
 }
 ````
 HTML : 
-````
+````html
 <div 
 	class="image rainbow" 
 	id="gradient_80" 
@@ -116,7 +116,7 @@ If you're not a webkit browser user, you will get a gradient background behind y
 We don't know yet if we should remove the function if you're not on a webkit browser, or display something else instad. 
 
 HTML : 
-````
+````html
 <h1 
 	class="rainbow" 
 	id="rainText_1" 
