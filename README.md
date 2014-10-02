@@ -39,7 +39,7 @@ And the HTML :
 
 #Result : 
 
-![](http://puu.sh/6ZyjF.png)
+![](http://i.imgur.com/q8nxt96.png)
 
 #Gradient Headers : 
 You can add some sexy gradients to your header images. 
@@ -73,9 +73,17 @@ CSS:
     height: 15em;
     text-align: center;
 }
+
+.content{
+    position: relative; 
+    z-index: 1;
+    color: #fff; 
+    float: left; 
+    width: 100%;
+}
 ````
 #Result :
-![](http://puu.sh/70Znx.png)
+![](http://i.imgur.com/I43QGcR.jpg)
 
 
 #Gradient images : 
