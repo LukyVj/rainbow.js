@@ -1,7 +1,7 @@
 Rainbow.js ![](http://img.shields.io/badge/Version-0.0.3-brightgreen.svg) ![](http://img.shields.io/badge/bugs/issues-1-red.svg)
 ==========
 
-A jQuery library to manage gadients easily ! 
+A jQuery library to manage gadients easy ! 
 
 #Get started
 Its easy, you have to download the rainbow.js main script, once its done, you just have to link it to your documents, after the jQuery inclusion.
